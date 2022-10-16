@@ -62,7 +62,7 @@ class Header extends HTMLElement {
       <div id="nav-bar">
         <div id="nav-bar__con">
           <div id="nav-bar__logo">
-            <img src="./mw-logo.png" alt="Marques Webster" id="logo" />
+            <img src="/public/mw-logo.png" alt="Marques Webster" id="logo" />
           </div>
 
           <div id="nav-bar__menu">

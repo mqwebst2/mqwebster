@@ -105,7 +105,7 @@ class PortfolioItem extends HTMLElement {
             <custom-btn-alt
               btn-link="${link}"
               btn-text="${text}"
-              btn-icon="./icons/right-arrow-icon.png"
+              btn-icon="/public/icons/right-arrow-icon.png"
             ></custom-btn-alt>
           </div>
         </div>

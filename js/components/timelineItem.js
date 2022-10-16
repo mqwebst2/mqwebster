@@ -168,7 +168,7 @@ class TimelineItem extends HTMLElement {
               <p class="page-p tl-paragraph">${paragraph}</p>
             </div>
             <div class="tl-right__quote">
-              <img src="./icons/quote-icon.png" alt="Timeline Quote Mark" class="tl-right__quote-mark" />
+              <img src="/public/icons/quote-icon.png" alt="Timeline Quote Mark" class="tl-right__quote-mark" />
               <span class="tl-right__quote-text">${quote}</span>
               <span class="tl-right__quote-author">${quoteAuthor}</span>
             </div>
