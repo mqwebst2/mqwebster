@@ -566,7 +566,7 @@ main {
     left: -24.5%;
     z-index: 3;
 
-    animation: tl-transition 4s ease infinite;
+    animation: tl-transition 2s ease infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
 
