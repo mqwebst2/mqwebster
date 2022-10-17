@@ -57,8 +57,6 @@ const resumeScroll = () => {
 
   let fromTopResume = resume.offsetTop - 80;
 
-  console.log(window.scrollY - fromTopResume);
-
   let cur = [];
 
   [...scrollItems].map((item) => {
