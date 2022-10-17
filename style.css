@@ -557,6 +557,17 @@ main {
     background-color: #ddd;
   }
 
+  #tl-progress-bar__indicator {
+    width: 4px;
+    height: 50vh;
+    border-radius: 4px;
+
+    position: fixed;
+    bottom: 50vh;
+
+    background-color: #1670ba;
+  }
+
   #tl-progress-bar__transition-inner {
     width: 0%;
     height: 4px;
