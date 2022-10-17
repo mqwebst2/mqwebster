@@ -489,6 +489,7 @@ main {
   justify-content: center;
 
   width: 100vw;
+  height: 100%;
 
   padding-top: 40px;
   padding-bottom: 60px;
@@ -510,6 +511,8 @@ main {
   padding-right: 8%;
 
   text-align: center;
+
+  background-color: white;
 }
 
 .contact-content {
@@ -559,7 +562,7 @@ main {
 
   #tl-progress-bar__indicator {
     width: 4px;
-    height: 50vh;
+    height: 44vh;
     border-radius: 4px;
 
     position: fixed;
@@ -577,7 +580,7 @@ main {
     left: -24.5%;
     z-index: 3;
 
-    animation: tl-transition 2s ease infinite;
+    animation: tl-transition 3s ease infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
 
@@ -617,6 +620,7 @@ main {
     border-radius: 6px;
 
     background-color: #eeeeeeee;
+    backdrop-filter: blur(8px);
   }
 
   .resume-menu-list {
