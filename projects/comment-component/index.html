@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="../public/icon_72.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Custom Comment Component</title>
+  </head>
+  <body>
+    <div id="app">
+      <template id="comment-template">
+        <style>
+          .comment {
+            border: 2px solid #1670ba;
+            border-radius: 8px;
+            margin-bottom: 4%;
+            padding: 2% 4%;
+            width: 360px;
+          }
+
+          .comment-title {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .comment-title > p {
+            margin: 0;
+          }
+
+          .comment-title__name {
+            font-size: 1.2em;
+            font-weight: 600;
+          }
+
+          .comment-title__email {
+            font-size: 0.88em;
+          }
+
+          .comment-divider {
+            height: 2px;
+            width: 100%;
+            background-color: #1670ba;
+            margin: 8px auto;
+          }
+
+          .comment-body > p {
+            margin: 0;
+          }
+        </style>
+
+        <div class="comment">
+          <div class="comment-title">
+            <p><span class="comment-title__name"></span></p>
+            <p><span class="comment-title__email"></span></p>
+          </div>
+          <div class="comment-divider"></div>
+          <div class="comment-body">
+            <p><span class="comment-body__message"></span></p>
+          </div>
+        </div>
+      </template>
+
+      <custom-comment
+        name="Marques"
+        email="marques.q.webster@gmail.com"
+        message="Just a test message, choi!"
+      ></custom-comment>
+
+      <custom-comment
+        name="First Name"
+        email="first-name@gmail.com"
+        message="Just a test message, choi!"
+      ></custom-comment>
+
+      <custom-comment
+        name="Last Name"
+        email="last-name@gmail.com"
+        message="Just a test message, choi!"
+      ></custom-comment>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
