@@ -21,7 +21,7 @@ class TimelineItem extends HTMLElement {
           width: 100%;
           min-height: 240px;
 
-          margin-top: 2%;
+          margin-top: 8%;
           padding-top: 4%;
           padding-bottom: 4%;
 
@@ -30,6 +30,8 @@ class TimelineItem extends HTMLElement {
 
         .tl-left {
           height: 100%;
+
+          padding-right: 24px;
 
           text-align: right;
 
@@ -74,6 +76,8 @@ class TimelineItem extends HTMLElement {
           flex-direction: column;
 
           max-width: 100%;
+
+          padding-left: 24px;
         }
 
         .tl-img {
@@ -107,14 +111,12 @@ class TimelineItem extends HTMLElement {
           align-items: end;
           justify-content: end;
 
-          text-align: right;
+          text-align: left;
 
-          height: 100px;
+          min-height: 100px;
 
-          margin-top: 40px;
-          padding-left: 8%;
-          padding-right: 8%;
-          padding-bottom: 4%;
+          margin-top: 60px;
+          padding: 4% 8%;
 
           position: relative;
 
@@ -127,8 +129,8 @@ class TimelineItem extends HTMLElement {
           width: 52px;
 
           position: absolute;
-          top: -12px;
-          left: -12px;
+          top: -24px;
+          left: -8px;
         }
 
         .tl-right__quote-text {
@@ -137,6 +139,36 @@ class TimelineItem extends HTMLElement {
 
         .tl-right__quote-author {
           color: #1670ba;
+        }
+
+        /* MOBILE AND TABLET */
+        @media screen and (max-width: 600px) {
+          .tl-item {
+            display: grid;
+            grid-template-columns: calc(25.5% - 15px) 30px calc(75% - 15px);
+            grid-template-rows: auto;
+  
+            width: 100%;
+            min-height: 240px;
+  
+            margin-top: 16%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+  
+            position: relative;
+          }
+
+          .tl-left {
+            text-align: center;
+          }
+
+          .tl-left__date-text {
+            font-size: 3em;
+          }
+
+          .tl-right__quote {
+            padding-top: 12%;
+          }
         }
       </style>
 

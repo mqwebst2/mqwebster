@@ -20,7 +20,7 @@ class PortfolioItem extends HTMLElement {
         justify-content: end;
         overflow: hidden;
       
-        height: 400px;
+        height: 360px;
       
         border-radius: 6px;
       }
@@ -86,7 +86,7 @@ class PortfolioItem extends HTMLElement {
     <div
       class="portfolio-item"
       style="
-        background-color: red;
+        background-color: #1670ba;
         background-image: url('${bgImage}');
         background-repeat: no-repeat;
         background-position: center;
