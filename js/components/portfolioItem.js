@@ -81,6 +81,12 @@ class PortfolioItem extends HTMLElement {
         position: absolute;
         bottom: 12%;
       }
+
+      @media screen and (max-width: 600px) {
+        .portfolio-item:active > .portfolio-item__con {
+          transform: translateY(0);
+        }
+      }
     </style>
     
     <div
