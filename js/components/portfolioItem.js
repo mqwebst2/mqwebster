@@ -113,13 +113,13 @@ class PortfolioItem extends HTMLElement {
     </div>
     `;
 
-    const width = window.innerWidth;
+    const width = window.matchMedia('(max-width: 600px)');
 
     const portfolioItems = document.querySelectorAll('.portfolio-item');
     const portfolioContent = document.querySelectorAll('.portfolio-item__con');
 
     for (const item of portfolioItems) {
-      if (width <= 600) {
+      if (width.matches) {
         item.addEventListener('click', () => {
           portfolioContent.style.transform = 'translateY(82%)';
 

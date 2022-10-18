@@ -109,6 +109,8 @@ main {
   width: 100vw;
 
   font-size: 5em;
+  text-align: center;
+  line-height: 1.1em;
 }
 
 /* ABOUT SECTION */
@@ -535,8 +537,6 @@ main {
 
   .name-banner__item {
     font-size: 3.6em;
-    text-align: center;
-    line-height: 1.1em;
   }
 
   #about-con {

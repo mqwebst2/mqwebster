@@ -24,14 +24,14 @@ class Header extends HTMLElement {
           align-items: center;
           justify-content: space-between;
         
-          width: 100vw;
+          width: 100%;
           height: 8vh;
         }
         
         #nav-bar__logo {
           display: flex;
-          height: 80%;
-          width: 48px;
+          height: 40px;
+          width: 40px;
         }
         
         #logo {
@@ -40,16 +40,33 @@ class Header extends HTMLElement {
         
           border-radius: 50%;
         }
-        
-        ul.menu-items__list {
+
+        #menu-selector {
+          display: none;
+
+          width: 28px;
+          height: 28px;
+
+          cursor: pointer;
+        }
+
+        #menu-selector__icon {
+          width: 100%;
+          height: 100%;
+
+          filter: invert(100%);
+          transform: rotate(90deg);
+        }
+
+        #menu-items__list {
           list-style-type: none;
         
           display: flex;
           flex-direction: row;
           justify-content: end;
           column-gap: 32px;
-        
-          width: 400px;
+
+          overflow: hidden;
         }
 
         li.menu-items__list-item {
@@ -59,7 +76,49 @@ class Header extends HTMLElement {
         li.menu-items__list-item > a {
           color: white;
         }
+
+        @media screen and (max-width: 600px) {
+          #menu-selector {
+            display: flex;
+          }
+
+          #menu-items__list {
+            display: none;
+          }
+
+          #menu-items__list.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 12px;
+
+            max-width: 100px;
+
+            padding: 8px 24px 8px 24px;
+
+            position: absolute;
+            top: 9vh;
+            right: 2vw;
+            z-index: 5;
+
+            border-radius: 6px;
+
+            border-bottom: none;
+
+            background-color: #1670ba;
+          }
+
+          li.menu-items__list-item {
+            padding: 4px;
+          }
+  
+          li.menu-items__list-item > a {
+            color: white;
+          }
+        }
       </style>
+
       <div id="nav-bar">
         <div id="nav-bar__con">
           <div id="nav-bar__logo">
@@ -68,7 +127,16 @@ class Header extends HTMLElement {
 
           <div id="nav-bar__menu">
             <nav id="nav-bar__menu-items">
-              <ul class="menu-items__list" id="menu-items__list">
+              <div id="menu-selector">
+                <a href="" id="menu-selector__link"
+                  ><img
+                    src="/public/icons/right-arrow-icon.png"
+                    alt="menu arrow"
+                    id="menu-selector__icon"
+                /></a>
+              </div>
+            
+              <ul id="menu-items__list">
                 <li class="menu-items__list-item"><a href="./#home">Home</a></li>
                 <li class="menu-items__list-item"><a href="./#about">About</a></li>
                 <li class="menu-items__list-item"><a href="./#resume">Resume</a></li>
@@ -80,6 +148,28 @@ class Header extends HTMLElement {
         </div>
       </div>
     `;
+
+    const width = window.matchMedia('(max-width: 600px)');
+
+    const menuLink = document.getElementById('menu-selector__link');
+    const menuIcon = document.getElementById('menu-selector__icon');
+    const menuItems = document.getElementById('menu-items__list');
+
+    if (width.matches) {
+      menuItems.className = '';
+
+      menuLink.addEventListener('click', (evt) => {
+        evt.preventDefault();
+
+        if (menuIcon.style.transform === 'rotate(-90deg)') {
+          menuIcon.style.transform = 'rotate(90deg)';
+          menuItems.classList.remove('active');
+        } else {
+          menuIcon.style.transform = 'rotate(-90deg)';
+          menuItems.classList.add('active');
+        }
+      });
+    }
   }
 }
 
