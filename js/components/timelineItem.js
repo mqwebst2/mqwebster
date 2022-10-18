@@ -47,6 +47,8 @@ class TimelineItem extends HTMLElement {
         }
 
         .tl-left__date-text {
+          margin-right: 4px;
+
           font-size: 6em;
           font-weight: 300;
           font-style: oblique;
