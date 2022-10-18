@@ -120,9 +120,7 @@ class PortfolioItem extends HTMLElement {
 
     for (const item of portfolioItems) {
       if (width <= 600) {
-        item.addEventListener('click', (evt) => {
-          evt.preventDefault();
-
+        item.addEventListener('click', () => {
           portfolioContent.style.transform = 'translateY(82%)';
 
           item.querySelector('.portfolio-item__con').style.transform =
