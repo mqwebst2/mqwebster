@@ -29,6 +29,7 @@ class TimelineItem extends HTMLElement {
         }
 
         .tl-left {
+          width: 100%;
           height: 100%;
 
           padding-right: 24px;
@@ -36,11 +37,13 @@ class TimelineItem extends HTMLElement {
           text-align: right;
 
           position: relative;
+
+          overflow: visible;
         }
 
         .tl-left__date {
           position: sticky;
-          top: 50vh;
+          top: 50%;
         }
 
         .tl-left__date-text {
@@ -65,7 +68,7 @@ class TimelineItem extends HTMLElement {
           border-radius: 100%;
 
           position: sticky;
-          top: 50vh;
+          top: 50%;
 
           background-color: black;
           box-shadow: 0px 0px 0px 6px #ffffff;

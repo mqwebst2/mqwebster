@@ -186,11 +186,11 @@ main {
 
 #tl-progress-bar__indicator {
   width: 4px;
-  height: 44vh;
+  height: 44%;
   border-radius: 4px;
 
   position: fixed;
-  bottom: 50vh;
+  bottom: 50%;
 
   background-color: #1670ba;
 }
@@ -408,6 +408,9 @@ main {
   transition: all 0.5s ease;
 
   filter: grayscale(1);
+
+  position: relative;
+  z-index: 0;
 }
 
 .hard-skills > li:hover {
@@ -489,6 +492,7 @@ main {
   justify-content: center;
 
   width: 100vw;
+  height: 100%;
 
   padding-top: 40px;
   padding-bottom: 60px;
@@ -510,6 +514,8 @@ main {
   padding-right: 8%;
 
   text-align: center;
+
+  background-color: white;
 }
 
 .contact-content {
@@ -557,6 +563,17 @@ main {
     background-color: #ddd;
   }
 
+  #tl-progress-bar__indicator {
+    width: 4px;
+    height: 48%;
+    border-radius: 4px;
+
+    position: fixed;
+    bottom: 50%;
+
+    background-color: #1670ba;
+  }
+
   #tl-progress-bar__transition-inner {
     width: 0%;
     height: 4px;
@@ -566,7 +583,7 @@ main {
     left: -24.5%;
     z-index: 3;
 
-    animation: tl-transition 4s ease infinite;
+    animation: tl-transition 3s ease infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
 
@@ -602,10 +619,12 @@ main {
 
     position: sticky;
     top: 10vh;
+    z-index: 1;
 
     border-radius: 6px;
 
-    background-color: #eeeeeeee;
+    background-color: #eeeeeedd;
+    backdrop-filter: blur(12px);
   }
 
   .resume-menu-list {

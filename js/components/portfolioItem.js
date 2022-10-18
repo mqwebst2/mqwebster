@@ -112,6 +112,22 @@ class PortfolioItem extends HTMLElement {
       </div>
     </div>
     `;
+
+    const width = window.innerWidth;
+
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const portfolioContent = document.querySelectorAll('.portfolio-item__con');
+
+    for (const item of portfolioItems) {
+      if (width <= 600) {
+        item.addEventListener('click', () => {
+          portfolioContent.style.transform = 'translateY(82%)';
+
+          item.querySelector('.portfolio-item__con').style.transform =
+            'translateX(0)';
+        });
+      }
+    }
   }
 }
 
