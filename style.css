@@ -658,10 +658,6 @@ main {
     align-items: center;
     justify-content: center;
   }
-
-  .portfolio-item:active > .portfolio-item__con {
-    transform: translateY(0);
-  }
 }
 
 /* ANIMATIONS */

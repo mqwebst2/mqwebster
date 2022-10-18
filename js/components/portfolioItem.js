@@ -113,23 +113,23 @@ class PortfolioItem extends HTMLElement {
     </div>
     `;
 
-    // const width = window.innerWidth;
+    const width = window.innerWidth;
 
-    // const portfolioItems = document.querySelectorAll('.portfolio-item');
-    // const portfolioContent = document.querySelectorAll('.portfolio-item__con');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const portfolioContent = document.querySelectorAll('.portfolio-item__con');
 
-    // for (const item of portfolioItems) {
-    //   if (width <= 600) {
-    //     item.addEventListener('click', (evt) => {
-    //       evt.preventDefault();
+    for (const item of portfolioItems) {
+      if (width <= 600) {
+        item.addEventListener('click', (evt) => {
+          evt.preventDefault();
 
-    //       portfolioContent.style.transform = 'translateY(82%)';
+          portfolioContent.style.transform = 'translateY(82%)';
 
-    //       item.querySelector('.portfolio-item__con').style.transform =
-    //         'translateX(0)';
-    //     });
-    //   }
-    // }
+          item.querySelector('.portfolio-item__con').style.transform =
+            'translateX(0)';
+        });
+      }
+    }
   }
 }
 
