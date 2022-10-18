@@ -565,7 +565,7 @@ main {
 
   #tl-progress-bar__indicator {
     width: 4px;
-    height: 44%;
+    height: 48%;
     border-radius: 4px;
 
     position: fixed;
@@ -657,6 +657,10 @@ main {
     row-gap: 4vh;
     align-items: center;
     justify-content: center;
+  }
+
+  .portfolio-item:active > .portfolio-item__con {
+    transform: translateY(0);
   }
 }
 

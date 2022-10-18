@@ -31,6 +31,7 @@ class Header extends HTMLElement {
         #nav-bar__logo {
           display: flex;
           height: 80%;
+          width: 48px;
         }
         
         #logo {

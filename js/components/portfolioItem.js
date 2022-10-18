@@ -81,12 +81,6 @@ class PortfolioItem extends HTMLElement {
         position: absolute;
         bottom: 12%;
       }
-
-      @media screen and (max-width: 600px) {
-        .portfolio-item:active > .portfolio-item__con {
-          transform: translateY(0);
-        }
-      }
     </style>
     
     <div
@@ -118,6 +112,24 @@ class PortfolioItem extends HTMLElement {
       </div>
     </div>
     `;
+
+    // const width = window.innerWidth;
+
+    // const portfolioItems = document.querySelectorAll('.portfolio-item');
+    // const portfolioContent = document.querySelectorAll('.portfolio-item__con');
+
+    // for (const item of portfolioItems) {
+    //   if (width <= 600) {
+    //     item.addEventListener('click', (evt) => {
+    //       evt.preventDefault();
+
+    //       portfolioContent.style.transform = 'translateY(82%)';
+
+    //       item.querySelector('.portfolio-item__con').style.transform =
+    //         'translateX(0)';
+    //     });
+    //   }
+    // }
   }
 }
 
