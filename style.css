@@ -186,11 +186,11 @@ main {
 
 #tl-progress-bar__indicator {
   width: 4px;
-  height: 44vh;
+  height: 44%;
   border-radius: 4px;
 
   position: fixed;
-  bottom: 50vh;
+  bottom: 50%;
 
   background-color: #1670ba;
 }
@@ -408,6 +408,9 @@ main {
   transition: all 0.5s ease;
 
   filter: grayscale(1);
+
+  position: relative;
+  z-index: 0;
 }
 
 .hard-skills > li:hover {
@@ -562,11 +565,11 @@ main {
 
   #tl-progress-bar__indicator {
     width: 4px;
-    height: 44vh;
+    height: 44%;
     border-radius: 4px;
 
     position: fixed;
-    bottom: 50vh;
+    bottom: 50%;
 
     background-color: #1670ba;
   }
@@ -616,11 +619,12 @@ main {
 
     position: sticky;
     top: 10vh;
+    z-index: 1;
 
     border-radius: 6px;
 
-    background-color: #eeeeeeee;
-    backdrop-filter: blur(8px);
+    background-color: #eeeeeedd;
+    backdrop-filter: blur(12px);
   }
 
   .resume-menu-list {

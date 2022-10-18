@@ -43,7 +43,7 @@ class TimelineItem extends HTMLElement {
 
         .tl-left__date {
           position: sticky;
-          top: 50vh;
+          top: 50%;
         }
 
         .tl-left__date-text {
@@ -68,7 +68,7 @@ class TimelineItem extends HTMLElement {
           border-radius: 100%;
 
           position: sticky;
-          top: 50vh;
+          top: 50%;
 
           background-color: black;
           box-shadow: 0px 0px 0px 6px #ffffff;
