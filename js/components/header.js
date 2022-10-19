@@ -233,7 +233,9 @@ class Header extends HTMLElement {
             slideDown();
           }
         } else {
-          slideUp();
+          if (menuIcon.style.transform === 'rotate(270deg)') {
+            slideUp();
+          }
         }
       });
     }
