@@ -56,6 +56,7 @@ class Header extends HTMLElement {
 
           filter: invert(100%);
           transform: rotate(90deg);
+          transition: all 0.4s ease-out;
         }
 
         #menu-items__list {
@@ -86,14 +87,15 @@ class Header extends HTMLElement {
             display: none;
           }
 
-          #menu-items__list.active {
+          #menu-items__list.inactive {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             row-gap: 12px;
 
-            max-width: 100px;
+            width: 160px;
+            height: 220px;
 
             padding: 8px 24px 8px 24px;
 
@@ -107,6 +109,34 @@ class Header extends HTMLElement {
             border-bottom: none;
 
             background-color: #1670ba;
+
+            animation: menu-slide-up 0.4s ease-out;
+          }
+
+          #menu-items__list.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 12px;
+
+            width: 160px;
+            height: 220px;
+
+            padding: 8px 24px 8px 24px;
+
+            position: absolute;
+            top: 9vh;
+            right: 2vw;
+            z-index: 5;
+
+            border-radius: 6px;
+
+            border-bottom: none;
+
+            background-color: #1670ba;
+
+            animation: menu-slide-down 0.4s ease-out;
           }
 
           li.menu-items__list-item {
@@ -115,6 +145,24 @@ class Header extends HTMLElement {
   
           li.menu-items__list-item > a {
             color: white;
+          }
+        }
+
+        @keyframes menu-slide-down {
+          from {
+            height: 0px;
+          }
+          to {
+            height: 220px;
+          }
+        }
+
+        @keyframes menu-slide-up {
+          from {
+            height: 220px;
+          }
+          to {
+            height: 0px;
           }
         }
       </style>
@@ -155,18 +203,37 @@ class Header extends HTMLElement {
     const menuIcon = document.getElementById('menu-selector__icon');
     const menuItems = document.getElementById('menu-items__list');
 
+    const slideDown = () => {
+      menuIcon.style.transform = 'rotate(270deg)';
+      menuItems.classList.add('active');
+    };
+    const slideUp = () => {
+      menuIcon.style.transform = 'rotate(90deg)';
+      menuItems.classList.remove('active');
+      menuItems.classList.add('inactive');
+      setTimeout(() => {
+        menuItems.classList.remove('inactive');
+      }, 400);
+    };
+
     if (width.matches) {
       menuItems.className = '';
 
-      menuLink.addEventListener('click', (evt) => {
+      window.addEventListener('click', (evt) => {
         evt.preventDefault();
 
-        if (menuIcon.style.transform === 'rotate(-90deg)') {
-          menuIcon.style.transform = 'rotate(90deg)';
-          menuItems.classList.remove('active');
+        const link = evt.target;
+
+        console.log(link);
+
+        if (link.id === 'menu-selector__icon') {
+          if (menuIcon.style.transform === 'rotate(270deg)') {
+            slideUp();
+          } else {
+            slideDown();
+          }
         } else {
-          menuIcon.style.transform = 'rotate(-90deg)';
-          menuItems.classList.add('active');
+          slideUp();
         }
       });
     }
