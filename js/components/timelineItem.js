@@ -86,6 +86,7 @@ class TimelineItem extends HTMLElement {
         }
 
         .tl-img {
+          display: none; //REMOVE TO SHOW IMAGES!
           width: 100%;
           height: 240px;
 

@@ -29,15 +29,15 @@ class PortfolioItem extends HTMLElement {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        row-gap: 4%;
+        justify-content: space-between;
       
         width: 100%;
-        height: 100%;
+        height: 360px;
       
         border-radius: 6px 6px 0 0;
-      
-        padding: 4%;
+
+        padding-left: 4%;
+        padding-right: 4%;
       
         text-align: center;
       
@@ -45,22 +45,23 @@ class PortfolioItem extends HTMLElement {
       
         background: linear-gradient(#ffffffdd, #ffffff);
       
-        transform: translateY(82%);
+        transform: translateY(288px);
         transition: all 0.8s ease-in-out;
       }
       
       .portfolio-item:hover > .portfolio-item__con {
-        transform: translateY(0);
+        transform: translateY(0px);
       }
       
       .portfolio-item__title {
-        position: absolute;
-        top: 0;
-      
-        width: 100#;
-        height: 30%;
-      
-        padding-top: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 72px;
+
         padding-left: 4%;
         padding-right: 4%;
       }
@@ -69,17 +70,14 @@ class PortfolioItem extends HTMLElement {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
+
+        height: 288px;
       
         padding-left: 12%;
         padding-right: 12%;
-      }
-
-      .portfolio-btn {
-        margin-top: 6%;
-
-        position: absolute;
-        bottom: 12%;
+        margin-top: auto;
+        margin-bottom: auto;
       }
     </style>
     
@@ -95,7 +93,7 @@ class PortfolioItem extends HTMLElement {
     >
       <div class="portfolio-item__con">
         <div class="portfolio-item__title">
-          <h2 class="page-h2">${title}</h2>
+          <h2 class="page-h2 portfolio-item-h2">${title}</h2>
         </div>
         <div class="portfolio-item__content">
           <div class="portfolio-description">
