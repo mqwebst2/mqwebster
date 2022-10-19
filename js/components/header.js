@@ -44,15 +44,14 @@ class Header extends HTMLElement {
         #menu-selector {
           display: none;
 
-          width: 28px;
-          height: 28px;
+          width: 100px;
 
           cursor: pointer;
         }
 
         #menu-selector__icon {
-          width: 100%;
-          height: 100%;
+          width: 28px;
+          height: 28px;
 
           filter: invert(100%);
           transform: rotate(90deg);
@@ -81,6 +80,17 @@ class Header extends HTMLElement {
         @media screen and (max-width: 600px) {
           #menu-selector {
             display: flex;
+            justify-content: right;
+          }
+
+          #menu-selector__link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: right;
+            column-gap: 10px;
+
+            color: white;
           }
 
           #menu-items__list {
@@ -181,7 +191,7 @@ class Header extends HTMLElement {
                     src="/public/icons/right-arrow-icon.png"
                     alt="menu arrow"
                     id="menu-selector__icon"
-                /></a>
+                />Menu</a>
               </div>
             
               <ul id="menu-items__list">
@@ -224,7 +234,10 @@ class Header extends HTMLElement {
 
         console.log(link);
 
-        if (link.id === 'menu-selector__icon') {
+        if (
+          link.id === 'menu-selector__icon' ||
+          link.id === 'menu-selector__link'
+        ) {
           if (menuIcon.style.transform === 'rotate(270deg)') {
             slideUp();
           } else {
