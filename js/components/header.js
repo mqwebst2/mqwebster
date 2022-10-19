@@ -176,7 +176,7 @@ class Header extends HTMLElement {
           <div id="nav-bar__menu">
             <nav id="nav-bar__menu-items">
               <div id="menu-selector">
-                <a href="" id="menu-selector__link"
+                <a href="javascript:;" id="menu-selector__link"
                   ><img
                     src="/public/icons/right-arrow-icon.png"
                     alt="menu arrow"
@@ -220,8 +220,6 @@ class Header extends HTMLElement {
       menuItems.className = '';
 
       window.addEventListener('click', (evt) => {
-        menuLink.preventDefault();
-
         const link = evt.target;
 
         console.log(link);
