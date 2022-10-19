@@ -219,8 +219,8 @@ class Header extends HTMLElement {
     if (width.matches) {
       menuItems.className = '';
 
-      menuLink.addEventListener('click', (evt) => {
-        evt.preventDefault();
+      window.addEventListener('click', (evt) => {
+        menuLink.preventDefault();
 
         const link = evt.target;
 
