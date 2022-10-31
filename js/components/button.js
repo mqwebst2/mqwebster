@@ -1,4 +1,4 @@
-import '/src/css/components/button.css';
+import '/css/components/button.css';
 
 class CustomButton extends HTMLElement {
   constructor() {
