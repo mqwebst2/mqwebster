@@ -1,9 +1,3 @@
-import './components/button.js';
-import './components/button-alt.js';
-import './components/header.js';
-import './components/portfolioItem.js';
-import './components/timelineItem.js';
-
 const tlTransitionAnimation = () => {
   const tlProgress = document.getElementById('tl-progress-bar__indicator');
   const tlProgressRect = tlProgress.getBoundingClientRect();
