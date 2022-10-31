@@ -1,4 +1,4 @@
-import '/src/css/components/button-alt.css';
+import '/css/components/button-alt.css';
 
 class CustomButtonAlt extends HTMLElement {
   constructor() {

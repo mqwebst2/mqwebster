@@ -1,0 +1,163 @@
+.tl-item {
+  display: grid;
+  grid-template-columns: 1fr 160px 1fr;
+  grid-template-rows: auto;
+
+  width: 100%;
+  min-height: 240px;
+
+  margin-top: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+
+  position: relative;
+}
+
+.tl-left {
+  width: 100%;
+  height: 100%;
+
+  padding-right: 24px;
+
+  text-align: right;
+
+  position: relative;
+
+  overflow: visible;
+}
+
+.tl-left__date {
+  position: sticky;
+  top: 50%;
+}
+
+.tl-left__date-text {
+  margin-right: 4px;
+
+  font-size: 6em;
+  font-weight: 300;
+  font-style: oblique;
+
+  color: #1670ba;
+}
+
+.tl-center {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+}
+
+.tl-center__circle {
+  width: 16px;
+  height: 16px;
+
+  border-radius: 100%;
+
+  position: sticky;
+  top: 50%;
+
+  background-color: black;
+  box-shadow: 0px 0px 0px 6px #ffffff;
+}
+
+.tl-right {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 100%;
+
+  padding-left: 24px;
+}
+
+.tl-img {
+  display: none; /* REMOVE TO SHOW IMAGES! */
+  width: 100%;
+  height: 240px;
+
+  border-radius: 6px;
+}
+
+.tl-img__image {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 6px;
+}
+
+.tl-right__title {
+  margin-top: 24px;
+}
+
+.tl-right__paragraph {
+  margin-top: 12px;
+
+  text-align: justify;
+}
+
+.tl-right__quote {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  align-items: end;
+  justify-content: end;
+
+  text-align: left;
+
+  min-height: 100px;
+
+  margin-top: 60px;
+  padding: 4% 8%;
+
+  position: relative;
+
+  border-radius: 6px;
+
+  background-color: #eee;
+}
+
+.tl-right__quote-mark {
+  width: 52px;
+
+  position: absolute;
+  top: -24px;
+  left: -8px;
+}
+
+.tl-right__quote-text {
+  font-style: italic;
+}
+
+.tl-right__quote-author {
+  color: #1670ba;
+}
+
+/* MOBILE AND TABLET */
+@media screen and (max-width: 600px) {
+  .tl-item {
+    display: grid;
+    grid-template-columns: calc(25.5% - 15px) 30px calc(75% - 15px);
+    grid-template-rows: auto;
+
+    width: 100%;
+    min-height: 240px;
+
+    margin-top: 16%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+    position: relative;
+  }
+
+  .tl-left {
+    text-align: center;
+  }
+
+  .tl-left__date-text {
+    font-size: 3em;
+  }
+
+  .tl-right__quote {
+    padding-top: 12%;
+  }
+}
