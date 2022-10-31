@@ -1,4 +1,3 @@
-import '../css/style.css';
 import './components/button.js';
 import './components/button-alt.js';
 import './components/header.js';
