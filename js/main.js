@@ -1,3 +1,9 @@
+import './components/button-alt.js';
+import './components/button.js';
+import './components/header.js';
+import './components/portfolioItem.js';
+import './components/timelineItem.js';
+
 const tlTransitionAnimation = () => {
   const tlProgress = document.getElementById('tl-progress-bar__indicator');
   const tlProgressRect = tlProgress.getBoundingClientRect();
@@ -21,7 +27,7 @@ const navbarScroll = () => {
   const navbarItems = document.querySelectorAll('.menu-items__list-item');
   const scrollItems = document.querySelectorAll('.page-section');
 
-  let fromTop = window.scrollY + 480;
+  let fromTop = window.scrollY + 720;
 
   let cur = [];
 

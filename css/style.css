@@ -1,3 +1,9 @@
+@import '/css/components/button-alt.css';
+@import '/css/components/button.css';
+@import '/css/components/header.css';
+@import '/css/components/portfolioItem.css';
+@import '/css/components/timelineItem.css';
+
 * {
   margin: 0;
   padding: 0;
