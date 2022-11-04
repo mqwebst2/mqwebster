@@ -1,3 +1,6 @@
+@import '/css/components/button.css';
+@import '/css/components/portfolioItem.css';
+
 * {
   margin: 0;
   padding: 0;

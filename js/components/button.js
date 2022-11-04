@@ -1,5 +1,3 @@
-import styles from '/css/components/button.css';
-
 class CustomButton extends HTMLElement {
   constructor() {
     super();

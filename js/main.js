@@ -1,4 +1,5 @@
 import './components/button.js';
+import './components/portfolioItem.js';
 
 const tlTransitionAnimation = () => {
   const tlProgress = document.getElementById('tl-progress-bar__indicator');
