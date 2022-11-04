@@ -4,6 +4,8 @@ import './components/header.js';
 import './components/portfolioItem.js';
 import './components/timelineItem.js';
 
+import './siteViewCount.js';
+
 const tlTransitionAnimation = () => {
   const tlProgress = document.getElementById('tl-progress-bar__indicator');
   const tlProgressRect = tlProgress.getBoundingClientRect();
