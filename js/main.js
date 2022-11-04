@@ -1,3 +1,5 @@
+import './components/button.js';
+
 const tlTransitionAnimation = () => {
   const tlProgress = document.getElementById('tl-progress-bar__indicator');
   const tlProgressRect = tlProgress.getBoundingClientRect();
