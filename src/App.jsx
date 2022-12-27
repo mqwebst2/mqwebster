@@ -9,12 +9,9 @@ import Contact from './sections/Contact';
 //COMPONENTS
 import Header from './components/js/Header';
 
-//CSS
-import './assets/App.css';
-
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Header />
       <Home />
       <About />
