@@ -1,5 +1,5 @@
 import React from 'react';
-import quotation from '/src/assets/images/quote-icon.png';
+import quotation from '/src/assets/icons/quote-icon.png';
 
 export default function Timeline(props) {
   return (
