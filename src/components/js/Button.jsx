@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../css/Button.css';
 
 export default function Button(props) {
   const [btnText, setBtnText] = useState(props.text);

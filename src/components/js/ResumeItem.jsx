@@ -1,6 +1,7 @@
 import React from 'react';
 import educationIcon from '/src/assets/icons/education-icon.png';
 import experienceIcon from '/src/assets/icons/experience-icon.png';
+import '../css/ResumeItem.css';
 
 export default function ResumeItem(props) {
   const iconSelector =

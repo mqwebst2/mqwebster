@@ -1,5 +1,6 @@
 import React from 'react';
 import quotation from '/src/assets/icons/quote-icon.png';
+import '../css/Timeline.css';
 
 export default function Timeline(props) {
   return (

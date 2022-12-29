@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '/src/assets/images/mw-logo.png';
+import '../css/Header.css';
 
 export default function Header() {
   return (

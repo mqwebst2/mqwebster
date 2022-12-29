@@ -1,13 +1,11 @@
 import { useState } from 'react';
-//SECTIONS
 import Home from './sections/Home';
 import About from './sections/About';
 import Resume from './sections/Resume';
 import Portfolio from './sections/Portfolio';
 import Contact from './sections/Contact';
-
-//COMPONENTS
 import Header from './components/js/Header';
+import './App.css';
 
 function App() {
   return (
