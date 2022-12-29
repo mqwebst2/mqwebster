@@ -28,7 +28,6 @@ export default function Resume() {
   ];
 
   const skillsElement = skills.map((item, i) => {
-    console.log(i);
     item.url = images[i].url;
     return (
       <li key={item.id}>

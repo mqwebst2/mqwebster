@@ -1,4 +1,4 @@
-button a {
+button a > div {
   display: flex;
   align-items: center;
 
@@ -9,13 +9,14 @@ button a {
   overflow: hidden;
 
   border: 2px solid #1670ba;
+  border-right: none;
   border-radius: 50px;
 
   background-color: #ffffff;
 
   transition: all 0.8s ease;
 }
-button a:hover {
+button a > div:hover {
   width: 160px;
 }
 
@@ -42,14 +43,13 @@ button a:hover {
   right: 0;
 
   border: 2px solid #1670ba;
-  border-right: none;
   border-radius: 50px;
 
   background-color: white;
 
   transition: all 0.8s ease;
 }
-button a:hover > .btn-img {
+button a > div:hover > .btn-img {
   transform: rotate(360deg);
 }
 .btn-img img {
