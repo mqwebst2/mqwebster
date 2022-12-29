@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Home from './sections/Home';
 import About from './sections/About';
 import Resume from './sections/Resume';
-// import Portfolio from './sections/Portfolio';
+import Portfolio from './sections/Portfolio';
 import Contact from './sections/Contact';
 
 //COMPONENTS
@@ -16,6 +16,7 @@ function App() {
       <Home />
       <About />
       <Resume />
+      <Portfolio />
       <Contact />
     </div>
   );

@@ -12,13 +12,19 @@ export default function Header() {
         <div className="navbar-menu">
           <ul className="navbar-menu__items">
             <li>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">Home</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Home</a>
+              <a href="#resume">Resume</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

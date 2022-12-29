@@ -170,6 +170,32 @@
   padding: 8px;
 }
 
+/* PORTFOLIO SECTION */
+#portfolio {
+  z-index: 2;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 100%;
+}
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template: auto / repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
 /* CONTACT SECTION */
 #contact {
   z-index: 2;

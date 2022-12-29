@@ -50,13 +50,13 @@ export default function Resume() {
           <div className="resume-nav">
             <ul className="resume-nav__items">
               <li>
-                <a href="">Education</a>
+                <a href="#Education">Education</a>
               </li>
               <li>
-                <a href="">Skills</a>
+                <a href="#Skills">Skills</a>
               </li>
               <li>
-                <a href="">Experience</a>
+                <a href="#Experience">Experience</a>
               </li>
             </ul>
           </div>

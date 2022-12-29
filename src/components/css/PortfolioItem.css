@@ -1,0 +1,42 @@
+.portfolio-item {
+  height: 360px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: red;
+}
+
+.portfolio-item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  padding: 8%;
+  padding-top: 0;
+  position: relative;
+  transform: translateY(75%);
+  transition: all 1s ease;
+  background: linear-gradient(#1670ba, #ffffffcc 28%);
+  border-radius: 8px;
+}
+.portfolio-item:hover .portfolio-item__content {
+  transform: translateY(0);
+}
+.portfolio-item__content > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  line-height: 1em;
+}
+.portfolio-item__content > p {
+  margin-top: 8%;
+  text-align: justify;
+}
+.portfolio-item__content > button {
+  position: absolute;
+  bottom: 8%;
+}
+.portfolio-item__content > button a > div {
+  width: 160px;
+}
