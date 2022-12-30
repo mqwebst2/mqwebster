@@ -6,7 +6,7 @@ import download from '/src/assets/icons/download-icon.png';
 import email from '/src/assets/icons/email-icon.png';
 import github from '/src/assets/icons/github-icon.png';
 import linkedin from '/src/assets/icons/linkedin-icon.png';
-import resume from '/src/assets/resume.pdf';
+import resume from '/src/assets/files/resume.pdf';
 
 export default function Contact() {
   return (

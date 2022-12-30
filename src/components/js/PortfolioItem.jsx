@@ -2,21 +2,18 @@ import React from 'react';
 import '../css/PortfolioItem.css';
 import project from '/src/assets/icons/project-icon.png';
 
-export default function PortfolioItem() {
+export default function PortfolioItem(props) {
   return (
     <div className="portfolio-item">
       <div className="portfolio-item__content">
-        <h3>Test Item</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio
-          ut sem nulla pharetra diam sit amet nisl. Enim nunc faucibus a
-          pellentesque sit amet.
-        </p>
+        <h3>{props.title}</h3>
+        <p>{props.desc}</p>
         <button>
-          <a href="google.com" target="_blank" rel="noopener noreferrer">
+          <a href={props.link} target="_blank" rel="noopener noreferrer">
             <div>
-              <span className="btn-text">See Project</span>
+              <span className="btn-text">
+                See {props.type[0].toUpperCase() + props.type.slice(1)}
+              </span>
               <div className="btn-img">
                 <img src={project} alt="Project Icon" />
               </div>
