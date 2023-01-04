@@ -1,21 +1,23 @@
-import { useState } from 'react';
-import Home from './sections/Home';
-import About from './sections/About';
-import Resume from './sections/Resume';
-import Portfolio from './sections/Portfolio';
-import Contact from './sections/Contact';
-import Header from './components/js/Header';
+import React from 'react';
+import Layout from './pages/Layout';
+import { functions } from './projects';
 import './App.css';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 function App() {
+  const routeElements = functions.map((item) => (
+    <Route key={item.name} path={`/project/${item.name}`} element={item()} />
+  ));
+
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <About />
-      <Resume />
-      <Portfolio />
-      <Contact />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+          {routeElements}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

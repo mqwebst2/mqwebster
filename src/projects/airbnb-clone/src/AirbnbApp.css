@@ -1,0 +1,176 @@
+.airbnb-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 80px;
+
+  position: relative;
+  top: 0;
+
+  background-color: #ffffff;
+  filter: drop-shadow(0 4px 8px #0000001a);
+}
+
+.airbnb-navbar-wrap {
+  width: 88%;
+}
+
+.airbnb-navbar-logo {
+  width: 104px;
+  height: 32px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+
+  width: 88%;
+}
+
+.hero-img {
+  display: flex;
+
+  min-width: 400px;
+  width: 100%;
+}
+
+.hero-img__grid {
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 40px;
+}
+
+.card-grid__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  column-gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  width: 88%;
+}
+
+.card {
+  width: 176px;
+
+  margin-bottom: 32px;
+}
+
+.card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 8px;
+  flex: 0 0 auto;
+
+  position: relative;
+}
+
+.card-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  background-color: #ffffffbb;
+}
+
+.card-img {
+  display: flex;
+  overflow: hidden;
+
+  width: 100%;
+  height: 240px;
+
+  border-radius: 9px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.card-rating__img {
+  display: flex;
+
+  width: 14px;
+  height: 14px;
+}
+
+.card-rating__img-inner {
+  width: 100%;
+}
+
+.card-rating__content {
+  font-size: 16px;
+  font-weight: 300;
+  color: #918e9b;
+}
+
+.card-rating__content > span {
+  color: #222222;
+}
+
+.card-title > h2 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #222222;
+}
+
+.card-price {
+  font-size: 16px;
+  font-weight: 300;
+  color: #222222;
+}
+
+.card-price > span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
