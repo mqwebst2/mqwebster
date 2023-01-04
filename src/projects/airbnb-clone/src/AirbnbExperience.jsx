@@ -4,9 +4,9 @@ import Hero from './components/Hero';
 import Card from './components/Card';
 import data from './data';
 
-import './AirbnbApp.css';
+import './AirbnbExperience.css';
 
-function AirbnbApp() {
+function AirbnbExperience() {
   const dataElements = data.map((item) => {
     return <Card key={item.id} {...item} />;
   });
@@ -24,4 +24,4 @@ function AirbnbApp() {
   );
 }
 
-export default AirbnbApp;
+export default AirbnbExperience;

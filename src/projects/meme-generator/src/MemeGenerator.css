@@ -1,0 +1,7 @@
+.MemeGenerator {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  padding-bottom: 60px;
+}
