@@ -29,6 +29,7 @@
 }
 .portfolio-item:hover .portfolio-item__bg > img {
   transform: scale(0.5);
+  filter: blur(4px) grayscale(1);
 }
 
 .portfolio-item__content {

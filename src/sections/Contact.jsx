@@ -8,7 +8,7 @@ import github from '/src/assets/icons/github-icon.png';
 import linkedin from '/src/assets/icons/linkedin-icon.png';
 import resume from '/src/assets/files/resume.pdf';
 
-export default function Contact() {
+export default function Contact(props) {
   return (
     <section id="contact">
       <div className="wrap">
@@ -35,6 +35,11 @@ export default function Contact() {
             icon={github}
             type="social"
           />
+        </div>
+
+        <div class="visitors">
+          <p class="visitors-text">The number of visitors to this website is</p>
+          <span id="visitors-count">{props.visitor}</span>
         </div>
       </div>
     </section>
