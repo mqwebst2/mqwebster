@@ -4,6 +4,13 @@
 }
 #home .wrap {
   justify-content: center;
+
+  background-image: url('/src/assets/images/home.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  background-attachment: fixed;
+  color: #eee;
 }
 
 .name-banner {

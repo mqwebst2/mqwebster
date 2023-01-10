@@ -3,7 +3,7 @@ export default {
     {
       id: 1,
       date: 'Jan. 2022 - Dec. 2022',
-      title: 'Web Developer Fellow',
+      title: 'Frontend Web Developer Fellow',
       location: 'Google | Tech Equity Program | Remote',
       list: [
         'Collaborative project-based fellowship to increase proficiency in Java, JavaScript, additional frameworks and libraries, and how to use these languages to optimize scalability.',

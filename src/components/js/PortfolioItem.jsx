@@ -5,6 +5,9 @@ import project from '/src/assets/icons/project-icon.png';
 export default function PortfolioItem(props) {
   return (
     <div className="portfolio-item">
+      <div className="portfolio-item__bg">
+        <img src={props.image} />
+      </div>
       <div className="portfolio-item__content">
         <h3>{props.title}</h3>
         <p>{props.desc}</p>

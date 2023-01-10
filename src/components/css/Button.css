@@ -18,6 +18,7 @@ button a > div {
 }
 button a > div:hover {
   width: 160px;
+  box-shadow: 0px 0px 8px 2px #1670ba44;
 }
 
 .btn-text {
