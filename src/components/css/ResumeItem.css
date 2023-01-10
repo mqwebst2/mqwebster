@@ -41,3 +41,9 @@
   margin-top: 12px;
   padding-left: 32px;
 }
+
+@media screen and (max-width: 768px) {
+  .resume-item__content {
+    text-align: left;
+  }
+}

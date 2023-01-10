@@ -16,7 +16,9 @@ button a > div {
 
   transition: all 0.8s ease;
 }
-button a > div:hover {
+button a > div:hover,
+button a > div:active,
+button a > div:focus {
   width: 160px;
   box-shadow: 0px 0px 8px 2px #1670ba44;
 }
