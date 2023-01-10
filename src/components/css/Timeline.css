@@ -1,0 +1,85 @@
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 160px 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  min-height: 240px;
+  margin-top: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  position: relative;
+}
+
+.tl-left {
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+  text-align: right;
+  position: relative;
+  overflow: visible;
+}
+.tl-left > h2 {
+  position: sticky;
+  top: 50%;
+  margin-right: 4px;
+  font-size: 6em;
+  font-weight: 300;
+  font-style: oblique;
+  color: #1670ba;
+}
+
+.tl-center {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.tl-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  position: sticky;
+  top: 50%;
+  background-color: #000000;
+  box-shadow: 0px 0px 0px 6px #ffffff;
+}
+
+.tl-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+  padding-left: 20px;
+}
+.tl-title {
+  text-align: left;
+}
+.tl-desc {
+  text-align: justify;
+}
+
+.tl-quote {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: end;
+  justify-content: end;
+  text-align: justify;
+  min-height: 100px;
+  margin-top: 40px;
+  padding: 4% 8%;
+  position: relative;
+  border-radius: 8px;
+  background-color: #eee;
+}
+.tl-quote > img {
+  width: 52px;
+  position: absolute;
+  top: -24px;
+  left: -8px;
+}
+.tl-quote__text {
+  font-style: italic;
+}
+.tl-quote__author {
+  color: #1670ba;
+}

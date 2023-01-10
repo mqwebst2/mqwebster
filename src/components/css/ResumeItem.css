@@ -1,0 +1,43 @@
+.resume-item {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.resume-item__icon {
+  display: flex;
+  flex: 0 0 auto;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #1670ba;
+}
+.resume-item__icon > img {
+  filter: invert(100%);
+}
+
+.resume-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  text-align: justify;
+}
+.resume-item__content > .date {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #555;
+}
+.resume-item__content > .location {
+  color: #1670ba;
+}
+.resume-item__list {
+  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+  padding-left: 32px;
+}
