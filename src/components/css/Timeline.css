@@ -19,6 +19,7 @@
   overflow: visible;
 }
 .tl-left > h2 {
+  /* width: 100%; */
   position: sticky;
   top: 50%;
   margin-right: 4px;
