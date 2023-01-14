@@ -18,13 +18,13 @@ export default function Header() {
   ];
 
   return (
-    <div className="navbar">
-      <div className={menu ? 'navbar-wrap open' : 'navbar-wrap'}>
+    <div id="navbar" className={menu ? 'open' : 'closed'}>
+      <div className="navbar-wrap">
         <div className="navbar-logo">
           <img src={logo} alt="Marques Webster" className="navbar-logo__img" />
         </div>
 
-        <div className={menu ? 'navbar-menu open' : 'navbar-menu'}>
+        <div className={menu ? 'navbar-menu open' : 'navbar-menu closed'}>
           <div className="navbar-menu__btn" onClick={toggle}>
             <div className="navbar-menu__btn-inner top"></div>
             <div className="navbar-menu__btn-inner mid"></div>

@@ -20,6 +20,7 @@ body {
   height: 100%;
 
   color: #333;
+  background-color: #1670ba;
 
   position: relative;
 }
@@ -63,4 +64,10 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    scroll-margin-block-start: 36vh;
+  }
 }
