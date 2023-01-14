@@ -37,8 +37,10 @@ export default function Contact(props) {
           />
         </div>
 
-        <div class="visitors">
-          <p class="visitors-text">The number of visitors to this website is</p>
+        <div className="visitors">
+          <p className="visitors-text">
+            The number of visitors to this website is
+          </p>
           <span id="visitors-count">{props.visitor}</span>
         </div>
       </div>

@@ -1,13 +1,10 @@
 .navbar {
   display: flex;
-
   padding-left: 8%;
   padding-right: 8%;
-
   position: sticky;
   top: 0;
   z-index: 10;
-
   background-color: #1670ba;
 }
 .navbar-wrap {
@@ -15,7 +12,10 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 8vh;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  transition: all 0.6s ease;
 }
 
 .navbar-logo {
@@ -29,6 +29,13 @@
   border-radius: 50%;
 }
 
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 8vh;
+}
+
 .navbar-menu__items {
   display: flex;
   align-items: center;
@@ -36,4 +43,86 @@
 }
 .navbar-menu__items li > a {
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-wrap.open {
+    margin-bottom: 100%;
+  }
+
+  .navbar-menu__btn {
+    display: grid;
+    grid-template-areas: auto / 1fr;
+    gap: 24%;
+    position: relative;
+    width: 6vh;
+    height: 3vh;
+    cursor: pointer;
+  }
+  .navbar-menu__btn-inner {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.6s ease;
+  }
+  .navbar-menu__btn-inner.top,
+  .navbar-menu__btn-inner.low {
+    width: 68%;
+    margin-left: auto;
+  }
+  .navbar-menu.open .navbar-menu__btn-inner.top {
+    width: 100%;
+    transform: rotate(-405deg);
+    transform-origin: center;
+    position: relative;
+    top: 1.2vh;
+  }
+  .navbar-menu.open .navbar-menu__btn-inner.mid {
+    transform: scale(0.4);
+    background-color: transparent;
+  }
+  .navbar-menu.open .navbar-menu__btn-inner.low {
+    width: 100%;
+    transform: rotate(405deg);
+    transform-origin: center;
+    position: relative;
+    top: -1.2vh;
+  }
+
+  .navbar-menu__items {
+    display: none;
+  }
+  .navbar-menu.open .navbar-menu__items {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 5vh;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    padding-top: 12%;
+    background-color: #1670ba;
+    font-size: 1.6em;
+    animation: 0.6s ease openMenu;
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    transform: translateY(-100%);
+    font-size: 0;
+  }
+  100% {
+    transform: translateY(0);
+    font-size: 1.6em;
+  }
+}
+@keyframes closeMenu {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
 }
