@@ -1,8 +1,13 @@
 import React from 'react';
+import homeImage from '/src/assets/images/home.svg';
 
 export default function Home() {
   return (
     <section id="home">
+      <div className="home-bg">
+        <img src={homeImage} />
+      </div>
+
       <div className="wrap">
         <span className="subheading">Hey, I'm...</span>
 

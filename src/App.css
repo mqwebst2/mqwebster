@@ -4,13 +4,21 @@
 }
 #home .wrap {
   justify-content: center;
-
-  background-image: url('/src/assets/images/home.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom right;
-  background-attachment: fixed;
   color: #eee;
+  z-index: 1;
+}
+.home-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+}
+.home-bg > img {
+  object-fit: cover;
+  object-position: 0% 80%;
+  width: 100%;
+  height: 100%;
 }
 
 .name-banner {
@@ -32,6 +40,26 @@
   font-size: 5em;
   text-align: center;
   line-height: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .home-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1670babb;
+  }
+  .home-bg > img {
+    object-position: 20%;
+    height: 100%;
+  }
+
+  .name-banner__items > li {
+    font-size: 3.6em;
+  }
 }
 
 /* ABOUT SECTION */
@@ -96,6 +124,12 @@
   background: linear-gradient(#ffffff, #ffffff00);
 }
 
+@media screen and (max-width: 768px) {
+  .tl-progress-bar {
+    left: 25%;
+  }
+}
+
 /* RESUME SECTION */
 #resume {
   z-index: 2;
@@ -112,6 +146,7 @@
   width: 180px;
   height: 100%;
   position: relative;
+  z-index: 1;
 }
 .resume-nav__items {
   display: flex;
@@ -172,6 +207,35 @@
   padding: 8px;
 }
 
+@media screen and (max-width: 768px) {
+  .resume-wrap {
+    flex-direction: column;
+  }
+
+  .resume-nav {
+    width: 100%;
+    height: max-content;
+    padding: 8%;
+    position: sticky;
+    top: 10vh;
+    border-radius: 6px;
+    background-color: #eeeeeeee;
+  }
+  .resume-nav__items {
+    flex-direction: row;
+  }
+
+  .resume-item__hard-skills {
+    grid-template: auto / repeat(2, 1fr);
+    margin-top: 8%;
+  }
+  .resume-item__hard-skills > li {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -50%;
+  }
+}
+
 /* PORTFOLIO SECTION */
 #portfolio {
   z-index: 2;
@@ -196,6 +260,13 @@
   grid-template: auto / repeat(3, 1fr);
   gap: 20px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-grid {
+    grid-template: auto / 1fr;
+    gap: 40px;
+  }
 }
 
 /* CONTACT SECTION */
