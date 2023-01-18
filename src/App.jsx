@@ -10,16 +10,16 @@ import './App.css';
 function App() {
   const [visitors, setVisitors] = useState('');
 
-  // useEffect(() => {
-  //   const apiURL =
-  //     'https://rty7kmnenc.execute-api.us-east-2.amazonaws.com/api/siteViewCount';
+  useEffect(() => {
+    const apiURL =
+      'https://rty7kmnenc.execute-api.us-east-2.amazonaws.com/api/siteViewCount';
 
-  //   fetch(apiURL)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setVisitors(data.body);
-  //     });
-  // }, []);
+    fetch(apiURL)
+      .then((res) => res.json())
+      .then((data) => {
+        setVisitors(data.body);
+      });
+  }, []);
 
   return (
     <div className="App">
