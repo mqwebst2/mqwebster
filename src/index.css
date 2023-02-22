@@ -20,6 +20,7 @@ body {
   height: 100%;
 
   color: #333;
+  background-color: #1670ba;
 
   position: relative;
 }
@@ -30,6 +31,7 @@ section {
   min-height: 92vh;
   position: relative;
   background-color: #ffffff;
+  scroll-margin-block-start: 10vh;
 }
 .wrap {
   display: flex;
@@ -46,6 +48,7 @@ section {
 h1 {
   font-size: 2em;
   line-height: 1em;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -61,4 +64,10 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    scroll-margin-block-start: 36vh;
+  }
 }
