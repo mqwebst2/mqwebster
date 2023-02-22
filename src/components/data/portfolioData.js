@@ -1,4 +1,5 @@
 import p4rImage from '/src/assets/sites/p4r-port-item.png';
+import netflixImage from '/src/assets/projects/netflix-port-item.png';
 import airbnbImage from '/src/assets/projects/airbnb-port-item.png';
 import memeImage from '/src/assets/projects/meme-port-item.png';
 import noteImage from '/src/assets/projects/notes-port-item.png';
@@ -16,6 +17,14 @@ export default {
     },
   ],
   projects: [
+    {
+      id: 1,
+      title: 'Myflix (Netflix) Clone',
+      desc: `While you might not be able to watch Netflix's catalogue on Myflix, you can search for any movie that may be there and MORE! Search for your favorite movies and add them to your list for later.`,
+      link: 'https://github.com/mqwebst2/netflix-clone',
+      image: netflixImage,
+      type: 'project',
+    },
     {
       id: 1,
       title: 'Airbnb Experiences Clone',
